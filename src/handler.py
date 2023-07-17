@@ -39,7 +39,9 @@ def run_inference(params):
             "getModels": ("GET", "/sdapi/v1/sd-models"),
             "getOptions": ("GET", "/sdapi/v1/options"),
             "setOptions": ("POST", "/sdapi/v1/options"),
-
+            "getProcess": ("GET", " /sdapi/v1/progress"),
+            "interrogate": ("POST", "/sdapi/v1/interrogate"),
+           
             # https://github.com/Mikubill/sd-webui-controlnet/wiki/API#web-api
             "getControlNetModels": ("GET", "/controlnet/model_list"),
             "getControlNetModules": ("GET", "/controlnet/module_list"),
